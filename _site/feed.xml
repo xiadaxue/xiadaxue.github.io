@@ -5,8 +5,8 @@
     <description>xxt Blog</description>
     <link>http://192.168.1.133:4000/</link>
     <atom:link href="http://192.168.1.133:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 07 Oct 2016 22:18:26 +0800</pubDate>
-    <lastBuildDate>Fri, 07 Oct 2016 22:18:26 +0800</lastBuildDate>
+    <pubDate>Fri, 07 Oct 2016 22:38:00 +0800</pubDate>
+    <lastBuildDate>Fri, 07 Oct 2016 22:38:00 +0800</lastBuildDate>
     <generator>Jekyll v3.3.0.pre.rc1</generator>
     
       <item>
@@ -361,13 +361,12 @@ git push -u xiadaxue master
   &lt;li&gt;Jekyll 2 需要 v1.9.3 及以上版本，Jekyll 3 需要 v2 及以上版本）&lt;a href=&quot;https://www.ruby-lang.org/en/downloads/&quot;&gt;下载地址&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	wget https://cache.ruby-lang.org/pub/ruby/2.3/ruby-2.3.1.tar.gz
-	tar xzfv ruby-2.3.1.tar.gz
-	cd ruby-2.3.1
-	./configure
-	make
-	make install
-	
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://cache.ruby-lang.org/pub/ruby/2.3/ruby-2.3.1.tar.gz
+tar xzfv ruby-2.3.1.tar.gz
+cd ruby-2.3.1
+./configure
+make
+make install
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -401,9 +400,9 @@ git push -u xiadaxue master
   &lt;li&gt;建新的工作区&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	jekyll new xiadaxue.github.io
-	cd xiadaxue.github.io
-	jekyll build
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll new xiadaxue.github.io
+cd xiadaxue.github.io
+jekyll build
 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
@@ -429,7 +428,6 @@ git push -u xiadaxue master
 &lt;/ul&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll serve --watch
-
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -440,29 +438,23 @@ git push -u xiadaxue master
 &lt;h2 id=&quot;github&quot;&gt;发布到github&lt;/h2&gt;
 
 &lt;h3 id=&quot;section-11&quot;&gt;克隆仓库&lt;/h3&gt;
-
-&lt;p&gt;-&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	git clone https://github.com/username/username.github.io
-	cd username.github.io
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/username/username.github.io
+cd username.github.io
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;将jekyll 建立的内容复制到&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cp -rf /root/github/xiadaxue.github.io/* ./&lt;/code&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;将jekyll 建立的内容复制到&lt;/p&gt;
-
-    &lt;p&gt;cp -rf /root/github/xiadaxue.github.io/* ./&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;发布&lt;/p&gt;
-  &lt;/li&gt;
+  &lt;li&gt;发布&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add --all
 git commit -m &quot;Initial commit&quot;
 git push -u xiadaxue master
-
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 

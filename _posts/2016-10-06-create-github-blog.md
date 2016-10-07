@@ -64,13 +64,12 @@ excerpt: 第一篇。
 - Jekyll 2 需要 v1.9.3 及以上版本，Jekyll 3 需要 v2 及以上版本）[下载地址](https://www.ruby-lang.org/en/downloads/)
 
 ```
-	wget https://cache.ruby-lang.org/pub/ruby/2.3/ruby-2.3.1.tar.gz
-	tar xzfv ruby-2.3.1.tar.gz
-	cd ruby-2.3.1
-	./configure
-	make
-	make install
-	
+wget https://cache.ruby-lang.org/pub/ruby/2.3/ruby-2.3.1.tar.gz
+tar xzfv ruby-2.3.1.tar.gz
+cd ruby-2.3.1
+./configure
+make
+make install
 ```
 
 #### yum 安装 RubyGems
@@ -94,9 +93,9 @@ excerpt: 第一篇。
 - 建新的工作区
 
 ```
-	jekyll new xiadaxue.github.io
-	cd xiadaxue.github.io
-	jekyll build
+jekyll new xiadaxue.github.io
+cd xiadaxue.github.io
+jekyll build
 
 ```
 
@@ -115,7 +114,6 @@ excerpt: 第一篇。
 
 ```
 jekyll serve --watch
-
 ```
 
 - 输入　[http://192.168.1.133:4000](http://192.168.1.133:4000)
@@ -123,17 +121,13 @@ jekyll serve --watch
 ## 发布到github
 
 ### 克隆仓库
-
--
-
 ```
-	git clone https://github.com/username/username.github.io
-	cd username.github.io
+git clone https://github.com/username/username.github.io
+cd username.github.io
 ```
-
 - 将jekyll 建立的内容复制到 
 
-	cp -rf /root/github/xiadaxue.github.io/* ./
+`cp -rf /root/github/xiadaxue.github.io/* ./`
 
 - 发布
 
@@ -141,7 +135,6 @@ jekyll serve --watch
 git add --all
 git commit -m "Initial commit"
 git push -u xiadaxue master
-
 ```
 
 ### 参考 
