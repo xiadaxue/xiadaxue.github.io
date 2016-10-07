@@ -16,7 +16,11 @@ host: 192.168.1.133
 port: 4000
 
 # Build settings
+<<<<<<< HEAD
 markdown: kramdown
+=======
+markdown: pygments
+>>>>>>> 19380b74ccc16c4fcab6222ecab0a3c0a3f0867b
 # highlight
 # 本地用rouge, github上用pygments
 # highlighter: pygments

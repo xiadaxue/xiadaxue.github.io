@@ -5,8 +5,13 @@
     <description>xxt Blog</description>
     <link>http://192.168.1.133:4000/</link>
     <atom:link href="http://192.168.1.133:4000/feed.xml" rel="self" type="application/rss+xml"/>
+<<<<<<< HEAD
     <pubDate>Fri, 07 Oct 2016 21:17:14 +0800</pubDate>
     <lastBuildDate>Fri, 07 Oct 2016 21:17:14 +0800</lastBuildDate>
+=======
+    <pubDate>Fri, 07 Oct 2016 20:10:02 +0800</pubDate>
+    <lastBuildDate>Fri, 07 Oct 2016 20:10:02 +0800</lastBuildDate>
+>>>>>>> 19380b74ccc16c4fcab6222ecab0a3c0a3f0867b
     <generator>Jekyll v3.3.0.pre.rc1</generator>
     
       <item>
