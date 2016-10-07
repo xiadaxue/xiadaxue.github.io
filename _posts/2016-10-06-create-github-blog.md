@@ -64,7 +64,6 @@ excerpt: 第一篇。
 - Jekyll 2 需要 v1.9.3 及以上版本，Jekyll 3 需要 v2 及以上版本）
 
 [下载地址](https://www.ruby-lang.org/en/downloads/)
-
 ```
 wget https://cache.ruby-lang.org/pub/ruby/2.3/ruby-2.3.1.tar.gz
 tar xzfv ruby-2.3.1.tar.gz
@@ -73,7 +72,6 @@ cd ruby-2.3.1
 make
 make install
 ```
-
 #### yum 安装 RubyGems
 	yum install rubygems
 
@@ -98,9 +96,7 @@ make install
 jekyll new xiadaxue.github.io
 cd xiadaxue.github.io
 jekyll build
-
 ```
-
 ### 启动:
 	jekyll serve --watch
 
@@ -117,7 +113,6 @@ jekyll build
 ```
 jekyll serve --watch
 ```
-
 - 输入　[http://192.168.1.133:4000](http://192.168.1.133:4000)
 
 ## 发布到github
@@ -130,7 +125,6 @@ cd username.github.io
 - 将jekyll 建立的内容复制到 
 
 `cp -rf /root/github/xiadaxue.github.io/* ./`
-
 - 发布
 
 ```
@@ -138,7 +132,6 @@ git add --all
 git commit -m "Initial commit"
 git push -u xiadaxue master
 ```
-
 ### 参考 
 
 - [https://pages.github.com/](https://pages.github.com/)
