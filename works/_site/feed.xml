@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>技术与成长；学习与提高</title>
+    <description>xxt Blog</description>
+    <link>http://192.168.1.133:4000/</link>
+    <atom:link href="http://192.168.1.133:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 07 Oct 2016 18:48:40 +0800</pubDate>
+    <lastBuildDate>Fri, 07 Oct 2016 18:48:40 +0800</lastBuildDate>
+    <generator>Jekyll v3.3.0.pre.rc1</generator>
+    
+      <item>
+        <title>如何使用GitHub搭建个人博客</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#section&quot; id=&quot;markdown-toc-section&quot;&gt;序&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#section-1&quot; id=&quot;markdown-toc-section-1&quot;&gt;准备工作&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#section-2&quot; id=&quot;markdown-toc-section-2&quot;&gt;创建仓库&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#section-3&quot; id=&quot;markdown-toc-section-3&quot;&gt;1. 添加仓库&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#github-pages&quot; id=&quot;markdown-toc-github-pages&quot;&gt;2. 启用GitHub Pages&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#section-4&quot; id=&quot;markdown-toc-section-4&quot;&gt;参考&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#jekyll-&quot; id=&quot;markdown-toc-jekyll-&quot;&gt;Jekyll 搭建&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#section-5&quot; id=&quot;markdown-toc-section-5&quot;&gt;准备工作&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#section-6&quot; id=&quot;markdown-toc-section-6&quot;&gt;环境搭建：&lt;/a&gt;            &lt;ul&gt;
+              &lt;li&gt;&lt;a href=&quot;#ruby&quot; id=&quot;markdown-toc-ruby&quot;&gt;编译安装 Ruby&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#yum--rubygems&quot; id=&quot;markdown-toc-yum--rubygems&quot;&gt;yum 安装 RubyGems&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#gem--jekyll&quot; id=&quot;markdown-toc-gem--jekyll&quot;&gt;使用 Gem 安装 Jekyll&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#yum--git&quot; id=&quot;markdown-toc-yum--git&quot;&gt;yum 安装 Git&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#section-7&quot; id=&quot;markdown-toc-section-7&quot;&gt;参考：&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#jekyll--1&quot; id=&quot;markdown-toc-jekyll--1&quot;&gt;使用 Jekyll 创建博客&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#section-8&quot; id=&quot;markdown-toc-section-8&quot;&gt;开始：&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#section-9&quot; id=&quot;markdown-toc-section-9&quot;&gt;启动:&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#section-10&quot; id=&quot;markdown-toc-section-10&quot;&gt;应用：&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#github&quot; id=&quot;markdown-toc-github&quot;&gt;发布到github&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#section-11&quot; id=&quot;markdown-toc-section-11&quot;&gt;克隆仓库&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#section-12&quot; id=&quot;markdown-toc-section-12&quot;&gt;参考&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#section-13&quot; id=&quot;markdown-toc-section-13&quot;&gt;结束&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;section&quot;&gt;序&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;为什么要建立自己的博客？
+原因很简单给自己一个尽情发挥的平台,然而Github给我们提供了这样平台。
+以下基于免费账号。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;section-1&quot;&gt;准备工作&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;注册账号 &lt;a href=&quot;https://github.com/&quot;&gt;https://github.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;section-2&quot;&gt;创建仓库&lt;/h1&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;1. 添加仓库&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/css/pics/one/new.png&quot; alt=&quot;new&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;github-pages&quot;&gt;2. 启用GitHub Pages&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;设置&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/css/pics/one/new2.png&quot; alt=&quot;new2&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;入口&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/css/pics/one/new3.png&quot; alt=&quot;new3&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;标题及说明&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/css/pics/one/new4.png&quot; alt=&quot;new4&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;确认模板以及发布&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/css/pics/one/new5.png&quot; alt=&quot;new5&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;测试 &lt;a href=&quot;https://xiadaxue.github.io&quot;&gt;地址&lt;/a&gt;（用户名一致）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/css/pics/one/new6.png&quot; alt=&quot;new6&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section-4&quot;&gt;参考&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;资料 &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;关于初步的搭建已经完成，如想更快捷的更新博客请继续…&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;jekyll-&quot;&gt;Jekyll 搭建&lt;/h1&gt;
+
+&lt;h2 id=&quot;section-5&quot;&gt;准备工作&lt;/h2&gt;
+&lt;h3 id=&quot;section-6&quot;&gt;环境搭建：&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;基础环境： Linux Centos 6.5&lt;/li&gt;
+  &lt;li&gt;运行环境： Ruby + RubyGems + Jekyll + Git&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;ruby&quot;&gt;编译安装 Ruby&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Jekyll 2 需要 v1.9.3 及以上版本，Jekyll 3 需要 v2 及以上版本）&lt;a href=&quot;https://www.ruby-lang.org/en/downloads/&quot;&gt;下载地址&lt;/a&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://cache.ruby-lang.org/pub/ruby/2.3/ruby-2.3.1.tar.gz
+tar xzfv ruby-2.3.1.tar.gz
+cd ruby-2.3.1
+./configure
+make
+make install
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;yum--rubygems&quot;&gt;yum 安装 RubyGems&lt;/h4&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yum install rubygems
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&quot;gem--jekyll&quot;&gt;使用 Gem 安装 Jekyll&lt;/h4&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem install jekyll
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&quot;yum--git&quot;&gt;yum 安装 Git&lt;/h4&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yum install git 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&quot;section-7&quot;&gt;参考：&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;地址：&lt;a href=&quot;http://jekyllcn.com/docs/home/&quot;&gt;http://jekyllcn.com/docs/home/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;jekyll--1&quot;&gt;使用 Jekyll 创建博客&lt;/h2&gt;
+
+&lt;h3 id=&quot;section-8&quot;&gt;开始：&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;建新的工作区
+    &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll new xiadaxue.github.io
+&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;xiadaxue.github.io
+jekyll build
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;section-9&quot;&gt;启动:&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll serve --watch
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;section-10&quot;&gt;应用：&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;浏览器输入：&lt;a href=&quot;http://127.0.0.1:4000&quot;&gt;http://127.0.0.1:4000&lt;/a&gt;
+ 如地址无效 请修改 _config.yml 增加：
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;host: 192.168.1.133 // 本机ip
+port: 4000
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;重启：
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll serve --watch
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;输入　&lt;a href=&quot;http://192.168.1.133:4000&quot;&gt;http://192.168.1.133:4000&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;github&quot;&gt;发布到github&lt;/h2&gt;
+
+&lt;h3 id=&quot;section-11&quot;&gt;克隆仓库&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/username/username.github.io
+cd username.github.io
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;将jekyll 建立的内容复制到
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cp -rf /root/github/xiadaxue.github.io/* ./
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;发布
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add --all
+git commit -m &quot;Initial commit&quot;
+git push -u xiadaxue master
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;section-12&quot;&gt;参考&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pages.github.com/&quot;&gt;https://pages.github.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;section-13&quot;&gt;结束&lt;/h1&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;第一篇到此结束。谢谢~
+一个礼貌的结束。
+欢迎批评指正~
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Thu, 06 Oct 2016 18:10:10 +0800</pubDate>
+        <link>http://192.168.1.133:4000/2016/10/06/create-github-blog/</link>
+        <guid isPermaLink="true">http://192.168.1.133:4000/2016/10/06/create-github-blog/</guid>
+        
+        
+        <category>GitHub</category>
+        
+      </item>
+    
+  </channel>
+</rss>
