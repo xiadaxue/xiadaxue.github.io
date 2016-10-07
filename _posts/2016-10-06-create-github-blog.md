@@ -61,7 +61,7 @@ excerpt: 第一篇。
 
 #### 编译安装 Ruby
 
-- Jekyll 2 需要 v1.9.3 及以上版本，Jekyll 3 需要 v2 及以上版本）
+* Jekyll 2 需要 v1.9.3 及以上版本，Jekyll 3 需要 v2 及以上版本）
 
 [下载地址](https://www.ruby-lang.org/en/downloads/)
 ```
@@ -90,7 +90,7 @@ make install
 
 ### 开始：
 
-- 建新的工作区
+* 建新的工作区
 
 ```
 jekyll new xiadaxue.github.io
@@ -102,13 +102,13 @@ jekyll build
 
 ### 应用：
 
-- 浏览器输入：[http://127.0.0.1:4000](http://127.0.0.1:4000)
+* 浏览器输入：[http://127.0.0.1:4000](http://127.0.0.1:4000)
  如地址无效 请修改 _config.yml 增加：
 
 	host: 192.168.1.133 // 本机ip
 	port: 4000
 
-- 重启：
+* 重启：
 
 ```
 jekyll serve --watch
@@ -122,10 +122,10 @@ jekyll serve --watch
 git clone https://github.com/username/username.github.io
 cd username.github.io
 ```
-- 将jekyll 建立的内容复制到 
+* 将jekyll 建立的内容复制到 
 
 `cp -rf /root/github/xiadaxue.github.io/* ./`
-- 发布
+* 发布
 
 ```
 git add --all
