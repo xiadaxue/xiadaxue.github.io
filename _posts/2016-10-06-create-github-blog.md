@@ -131,7 +131,7 @@ cp -rf /root/github/xiadaxue.github.io/* ./
 ```
 git add --all
 git commit -m "Initial commit"
-git push -u origin master
+git push -u xiadaxue master
 ```
 
 ### 参考 
