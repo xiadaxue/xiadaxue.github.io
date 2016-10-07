@@ -61,7 +61,9 @@ excerpt: 第一篇。
 
 #### 编译安装 Ruby
 
-- Jekyll 2 需要 v1.9.3 及以上版本，Jekyll 3 需要 v2 及以上版本）[下载地址](https://www.ruby-lang.org/en/downloads/)
+- Jekyll 2 需要 v1.9.3 及以上版本，Jekyll 3 需要 v2 及以上版本）
+
+[下载地址](https://www.ruby-lang.org/en/downloads/)
 
 ```
 wget https://cache.ruby-lang.org/pub/ruby/2.3/ruby-2.3.1.tar.gz
