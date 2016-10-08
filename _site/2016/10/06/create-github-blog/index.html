@@ -149,7 +149,9 @@
 <h2 id="section-3">1. 添加仓库</h2>
 
 <p><img src="/css/pics/one/new.png" alt="new" /></p>
+
 <h2 id="github-pages">2. 启用GitHub Pages</h2>
+
 <ul>
   <li>设置</li>
 </ul>
@@ -206,18 +208,18 @@
 <h4 id="ruby">编译安装 Ruby</h4>
 
 <ul>
-  <li>Jekyll 2 需要 v1.9.3 及以上版本，Jekyll 3 需要 v2 及以上版本）<a href="https://www.ruby-lang.org/en/downloads/">下载地址</a>
-    <div class="highlighter-rouge"><pre class="highlight"><code>wget https://cache.ruby-lang.org/pub/ruby/2.3/ruby-2.3.1.tar.gz
+  <li>Jekyll 2 需要 v1.9.3 及以上版本，Jekyll 3 需要 v2 及以上版本）</li>
+</ul>
+
+<p><a href="https://www.ruby-lang.org/en/downloads/">下载地址</a></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>wget https://cache.ruby-lang.org/pub/ruby/2.3/ruby-2.3.1.tar.gz
 tar xzfv ruby-2.3.1.tar.gz
 cd ruby-2.3.1
 ./configure
 make
 make install
 </code></pre>
-    </div>
-  </li>
-</ul>
-
+</div>
 <h4 id="yum--rubygems">yum 安装 RubyGems</h4>
 <div class="highlighter-rouge"><pre class="highlight"><code>yum install rubygems
 </code></pre>
@@ -245,12 +247,12 @@ make install
 <h3 id="section-8">开始：</h3>
 
 <ul>
-  <li>建新的工作区
-    <div class="language-shell highlighter-rouge"><pre class="highlight"><code>jekyll new xiadaxue.github.io
-<span class="nb">cd </span>xiadaxue.github.io
-jekyll build
-</code></pre>
-    </div>
+  <li>
+    <p>建新的工作区</p>
+
+    <p>jekyll new xiadaxue.github.io
+  cd xiadaxue.github.io
+  jekyll build</p>
   </li>
 </ul>
 
@@ -262,45 +264,48 @@ jekyll build
 <h3 id="section-10">应用：</h3>
 
 <ul>
-  <li>浏览器输入：<a href="http://127.0.0.1:4000">http://127.0.0.1:4000</a>
- 如地址无效 请修改 _config.yml 增加：
-    <div class="highlighter-rouge"><pre class="highlight"><code>host: 192.168.1.133 // 本机ip
-port: 4000
-</code></pre>
-    </div>
+  <li>
+    <p>浏览器输入：<a href="http://127.0.0.1:4000">http://127.0.0.1:4000</a>
+如地址无效 请修改 _config.yml 增加：</p>
+
+    <p>host: 192.168.1.133 // 本机ip
+  port: 4000</p>
   </li>
-  <li>重启：
-    <div class="highlighter-rouge"><pre class="highlight"><code>jekyll serve --watch
-</code></pre>
-    </div>
+  <li>
+    <p>重启：</p>
   </li>
+</ul>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>jekyll serve --watch
+</code></pre>
+</div>
+<ul>
   <li>输入　<a href="http://192.168.1.133:4000">http://192.168.1.133:4000</a></li>
 </ul>
 
 <h2 id="github">发布到github</h2>
 
 <h3 id="section-11">克隆仓库</h3>
-
 <div class="highlighter-rouge"><pre class="highlight"><code>git clone https://github.com/username/username.github.io
 cd username.github.io
-
 </code></pre>
 </div>
 <ul>
-  <li>将jekyll 建立的内容复制到
-    <div class="highlighter-rouge"><pre class="highlight"><code>cp -rf /root/github/xiadaxue.github.io/* ./
-</code></pre>
-    </div>
+  <li>
+    <p>将jekyll 安装到当前目录</p>
+
+    <p>jekyll new . –force</p>
   </li>
-  <li>发布
-    <div class="highlighter-rouge"><pre class="highlight"><code>git add --all
-git commit -m "Initial commit"
-git push -u xiadaxue master
-</code></pre>
-    </div>
+  <li>
+    <p>发布</p>
   </li>
 </ul>
 
+<div class="highlighter-rouge"><pre class="highlight"><code>git add --all
+git commit -m "Initial commit"
+git push -u xiadaxue master
+</code></pre>
+</div>
 <h3 id="section-12">参考</h3>
 
 <ul>
