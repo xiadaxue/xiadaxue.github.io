@@ -25,7 +25,7 @@ excerpt: 第一篇。
 
 ## 2. 启用GitHub Pages
 
--  设置
+- 设置
 
 ![new2](/css/pics/one/new2.png)
 
@@ -94,18 +94,17 @@ make install
 
 * 建新的工作区
 
-```
-jekyll new xiadaxue.github.io
-cd xiadaxue.github.io
-jekyll build
-```
+	jekyll new xiadaxue.github.io
+	cd xiadaxue.github.io
+	jekyll build
+
 ### 启动:
 	jekyll serve --watch
 
 ### 应用：
 
 * 浏览器输入：[http://127.0.0.1:4000](http://127.0.0.1:4000)
- 如地址无效 请修改 _config.yml 增加：
+如地址无效 请修改 _config.yml 增加：
 
 	host: 192.168.1.133 // 本机ip
 	port: 4000
