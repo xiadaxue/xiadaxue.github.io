@@ -5,8 +5,8 @@
     <description>xxt Blog</description>
     <link>http://192.168.1.133:4000/</link>
     <atom:link href="http://192.168.1.133:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 08 Oct 2016 22:22:07 +0800</pubDate>
-    <lastBuildDate>Sat, 08 Oct 2016 22:22:07 +0800</lastBuildDate>
+    <pubDate>Sun, 09 Oct 2016 06:19:40 +0800</pubDate>
+    <lastBuildDate>Sun, 09 Oct 2016 06:19:40 +0800</lastBuildDate>
     <generator>Jekyll v3.3.0.pre.rc1</generator>
     
       <item>
@@ -116,6 +116,7 @@
 &lt;h1 id=&quot;jekyll-&quot;&gt;Jekyll 搭建&lt;/h1&gt;
 
 &lt;h2 id=&quot;section-5&quot;&gt;准备工作&lt;/h2&gt;
+
 &lt;h3 id=&quot;section-6&quot;&gt;环境搭建：&lt;/h3&gt;
 
 &lt;ul&gt;
@@ -130,6 +131,7 @@
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.ruby-lang.org/en/downloads/&quot;&gt;下载地址&lt;/a&gt;&lt;/p&gt;
+
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://cache.ruby-lang.org/pub/ruby/2.3/ruby-2.3.1.tar.gz
 tar xzfv ruby-2.3.1.tar.gz
 cd ruby-2.3.1
@@ -138,22 +140,27 @@ make
 make install
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
+
 &lt;h4 id=&quot;yum--rubygems&quot;&gt;yum 安装 RubyGems&lt;/h4&gt;
+
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yum install rubygems
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;h4 id=&quot;gem--jekyll&quot;&gt;使用 Gem 安装 Jekyll&lt;/h4&gt;
+
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem install jekyll
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;h4 id=&quot;yum--git&quot;&gt;yum 安装 Git&lt;/h4&gt;
+
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yum install git 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;h4 id=&quot;section-7&quot;&gt;参考：&lt;/h4&gt;
+
 &lt;ul&gt;
   &lt;li&gt;地址：&lt;a href=&quot;http://jekyllcn.com/docs/home/&quot;&gt;http://jekyllcn.com/docs/home/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -165,16 +172,17 @@ make install
 &lt;h3 id=&quot;section-8&quot;&gt;开始：&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;建新的工作区&lt;/p&gt;
-
-    &lt;p&gt;jekyll new xiadaxue.github.io
-  cd xiadaxue.github.io
-  jekyll build&lt;/p&gt;
-  &lt;/li&gt;
+  &lt;li&gt;建新的工作区&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll new xiadaxue.github.io
+cd xiadaxue.github.io
+jekyll build
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
 &lt;h3 id=&quot;section-9&quot;&gt;启动:&lt;/h3&gt;
+
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll serve --watch
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
@@ -182,21 +190,23 @@ make install
 &lt;h3 id=&quot;section-10&quot;&gt;应用：&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;浏览器输入：&lt;a href=&quot;http://127.0.0.1:4000&quot;&gt;http://127.0.0.1:4000&lt;/a&gt;
-如地址无效 请修改 _config.yml 增加：&lt;/p&gt;
+  &lt;li&gt;浏览器输入：&lt;a href=&quot;http://127.0.0.1:4000&quot;&gt;http://127.0.0.1:4000&lt;/a&gt;
+如地址无效 请修改 _config.yml 增加：&lt;/li&gt;
+&lt;/ul&gt;
 
-    &lt;p&gt;host: 192.168.1.133 // 本机ip
-  port: 4000&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;重启：&lt;/p&gt;
-  &lt;/li&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;host: 192.168.1.133 // 本机ip
+port: 4000
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;重启：&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll serve --watch
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
+
 &lt;ul&gt;
   &lt;li&gt;输入　&lt;a href=&quot;http://192.168.1.133:4000&quot;&gt;http://192.168.1.133:4000&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -204,19 +214,21 @@ make install
 &lt;h2 id=&quot;github&quot;&gt;发布到github&lt;/h2&gt;
 
 &lt;h3 id=&quot;section-11&quot;&gt;克隆仓库&lt;/h3&gt;
+
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/username/username.github.io
 cd username.github.io
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;将jekyll 安装到当前目录&lt;/p&gt;
+  &lt;li&gt;将jekyll 安装到当前目录&lt;/li&gt;
+&lt;/ul&gt;
 
-    &lt;p&gt;jekyll new . –force&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;发布&lt;/p&gt;
-  &lt;/li&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll new . --force
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;发布&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add --all
@@ -224,6 +236,7 @@ git commit -m &quot;Initial commit&quot;
 git push -u xiadaxue master
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
+
 &lt;h3 id=&quot;section-12&quot;&gt;参考&lt;/h3&gt;
 
 &lt;ul&gt;
