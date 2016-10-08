@@ -22,7 +22,9 @@ excerpt: 第一篇。
 ## 1. 添加仓库
 
 ![new](/css/pics/one/new.png)
+
 ## 2. 启用GitHub Pages
+
 -  设置
 
 ![new2](/css/pics/one/new2.png)
@@ -122,9 +124,10 @@ jekyll serve --watch
 git clone https://github.com/username/username.github.io
 cd username.github.io
 ```
-* 将jekyll 建立的内容复制到 
+* 将jekyll 安装到当前目录
 
-`cp -rf /root/github/xiadaxue.github.io/* ./`
+	jekyll new . --force
+
 * 发布
 
 ```
